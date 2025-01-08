@@ -13,3 +13,7 @@ body {
     height: 100%;
     letter-spacing: 0.5px;
 }
+
+.container-fluid {
+    margin-top: 130px;
+}

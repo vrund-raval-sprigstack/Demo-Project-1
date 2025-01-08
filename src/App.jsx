@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './styles/Header_Module.css'
 import './styles/Common.css'
+import './styles/Home_Module.css'
+
 import AppRoutes from './routes/AppRoutes'
 
 function App() {

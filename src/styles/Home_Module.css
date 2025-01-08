@@ -1,0 +1,26 @@
+/* Card background and text styles */
+
+
+/* Hover effect styles */
+.hover-effect {
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.hover-effect:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Dark grayish shadow */
+}
+
+.hover-effect:hover .name-text {
+    color: rgba(54, 89, 163, 1);
+    font-weight: 500;
+
+    /* Change the name color to red on hover */
+}
+
+.hover-effect:hover .company-text {
+    color: black;
+    /* Darker color for the company on hover */
+    font-weight: 500;
+    /* Make company name bold on hover */
+}

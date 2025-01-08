@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <Fragment>
             <div className="fixed-top">
-                <div className="container-fluid bg-light">
+                <div className="bg-light">
                     <div className="row align-items-center p-2">
 
                         {/* Logo Section */}
@@ -94,7 +94,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid bg-light border-top p-3">
+                <div className="bg-light border-top p-3">
                     <div className="d-flex justify-content-evenly align-items-center">
                         {/* Task History with Dropdown */}
                         <div className="dropdown">
