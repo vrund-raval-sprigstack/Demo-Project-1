@@ -1,0 +1,15 @@
+/* mySearchField class for the input text color and font size */
+.mySearchField {
+    color: black;
+    /* Color of the text inside the input field */
+    font-size: 14px;
+    /* Font size for the text inside the input */
+}
+
+/* Targeting the placeholder text inside the input field */
+.mySearchField::placeholder {
+    color: rgba(21, 24, 33, 0.25);
+    /* Color of the placeholder text */
+    font-size: 14px;
+    /* Font size for the placeholder text */
+}
