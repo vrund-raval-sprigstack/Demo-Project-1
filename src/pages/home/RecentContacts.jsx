@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import RecentContactCard from '../../components/RecentContactCard'
 import useApiService from '../../services/ApiServices';
-
+import FadeLoader from "react-spinners/FadeLoader";
 
 "use client";
+
 import { useErrorBoundary } from "react-error-boundary";
+
+
 
 export default function RecentContacts() {
 
-
     const { showBoundary } = useErrorBoundary();
+
 
     const { postAPI } = useApiService();
 
     const [recentContacts, setRecentContacts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
 
@@ -63,7 +65,6 @@ export default function RecentContacts() {
 
 
         } catch (e) {
-            console.error('something went wrong');
             showBoundary(e);
         } finally {
             setIsLoading(false);
@@ -106,22 +107,38 @@ export default function RecentContacts() {
     // ];
 
 
-    if (isLoading) {
-        return <h1>Loading...</h1>;
-    }
+
     return (
         <>
+            <div className='tw-text-lg tw-font-medium primary-color-text'>
+                Recent Contacts
+            </div>
+
+
 
             <div>
-                <h5>Recent Contacts</h5>
+                {
+                    isLoading ?
+                        (<div className="tw-flex tw-justify-center tw-items-center tw-h-80">
+                            {/* FadeLoader Spinner */}
+                            <FadeLoader color="gray" size={50} />
+                        </div>) :
+
+                        (recentContacts.map((contact, index) => (
+                            <RecentContactCard
+                                key={index}
+                                name={`${contact.FirstName} ${contact.LastName}`}
+                                company={contact.Account.Name}
+                            />
+                        )))
+
+
+
+
+                }
             </div>
-            {recentContacts.map((contact, index) => (
-                <RecentContactCard
-                    key={index}
-                    name={`${contact.FirstName} ${contact.LastName}`}
-                    company={contact.Account.Name}
-                />
-            ))}
+
+
         </>
     );
 }

@@ -45,11 +45,15 @@ const ScheduledEmails = () => {
         }
     ];
     return (
-        <div className="card">
+        <div className="card tw-border tw-border-gray-300 tw-rounded-xl">
             <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                    <h5 className="card-title mb-0">Scheduled Emails</h5>
-                    <a href="#" className="text-primary text-decoration-none">View More</a>
+                <div className="d-flex justify-content-between align-items-center mb-3 tw-px-1">
+
+                    <div className='tw-text-lg tw-font-medium primary-color-text'>
+                        Scheduled Emails
+                    </div>
+                    <a href="#" className="text-primary text-decoration-underline tw-text-sm tw-font-semibold">View More</a>
+
                 </div>
 
                 <div className="d-flex flex-column gap-3">

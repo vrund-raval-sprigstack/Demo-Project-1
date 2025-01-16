@@ -51,29 +51,22 @@
 
 .day-text {
     color: #3279cc7d;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
-    line-height: 1;
 }
 
 .date-number {
     color: #464646;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1;
 }
 
-.content-section {
+/* .content-section {
     flex: 1;
     padding: 20px 24px;
-}
+} */
 
 .scheduled-by {
     margin-bottom: 8px;
 }
 
-.scheduled-label {
+/* .scheduled-label {
     color: #6B7280;
     font-size: 14px;
     font-weight: 400;
@@ -84,15 +77,15 @@
     color: #374151;
     font-size: 14px;
     font-weight: 500;
-}
+} */
 
-.email-subject {
+/* .email-subject {
     color: #111827;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 12px;
     line-height: 1.5;
-}
+} */
 
 .bottom-row {
     display: flex;
@@ -100,10 +93,6 @@
     align-items: center;
 }
 
-.timestamp {
-    color: #6B7280;
-    font-size: 14px;
-}
 
 .actions-group {
     display: flex;
@@ -137,9 +126,8 @@
     margin-left: 2px;
 }
 
-.unsend-btn {
+/* .unsend-btn {
     background-color: #D1D5DB;
-    /* Darker gray color */
     color: white;
     border: none;
     padding: 6px 16px;
@@ -147,7 +135,7 @@
     font-size: 14px;
     font-weight: 500;
     transition: all 0.2s ease;
-}
+} */
 
 .unsend-btn:hover {
     background-color: #9CA3AF;

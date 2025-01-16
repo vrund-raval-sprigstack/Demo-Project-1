@@ -8,38 +8,53 @@ export default function RecentEmailCard({ sender, title, date, sendCount, readCo
         <div className="p-3 bg-white rounded">
             <div className="d-flex flex-column">
                 {/* Sender */}
-                <div className="mb-1">
-                    <span className="text-muted" style={{ fontSize: '14px' }}>Send By: </span>
-                    <span style={{ fontSize: '14px' }}>{sender}</span>
+                <div className="mb-2">
+                    <span className="tw-text-xs tw-font-medium tw-text-gray-500">Send By: </span>
+                    <span className="tw-text-xs tw-font-medium">{sender}</span>
                 </div>
 
                 {/* Title */}
-                <h6 className="mb-2">{title}</h6>
+                <div className="mb-2 tw-text-base">{title}</div>
 
                 {/* Bottom row */}
                 <div className="d-flex justify-content-between align-items-center">
-                    <span className="text-muted" style={{ fontSize: '14px' }}>{date}</span>
+                    <span className="tw-text-xs tw-font-medium tw-text-gray-500">{date}</span>
 
                     <div className="d-flex gap-3">
                         <div>
-                            <span className="text-primary d-flex align-items-center gap-1" style={{ fontSize: '14px' }}>
-                                Send to: {sendCount}
+                            <span className="tw-text-xs tw-font-medium d-flex align-items-center gap-1">
+                                <span className='custom-blue-color-text tw-font-semibold'>
+
+                                    Send to:
+
+                                </span>
+
+                                <span>
+                                    {sendCount}
+                                </span>
                                 <img
                                     src={ImportImages.PeopleIcon}
                                     alt="Logo"
                                     className="headerLogoImage"
-                                    style={{ height: '14px' }}
+                                    style={{ height: '12px' }}
                                 />
                             </span>
                         </div>
                         <div>
-                            <span className="text-success d-flex align-items-center gap-1" style={{ fontSize: '14px' }}>
-                                Read by: {readCount}
+                            <span className="d-flex align-items-center gap-1 tw-text-xs tw-font-medium">
+
+                                <span className='custom-green-color-text tw-font-semibold'>
+                                    Read by:
+                                </span>
+                                <span>
+                                    {readCount}
+                                </span>
+
                                 <img
                                     src={ImportImages.PeopleIcon}
                                     alt="Logo"
                                     className="headerLogoImage"
-                                    style={{ height: '14px' }}
+                                    style={{ height: '12px' }}
                                 />
                             </span>
                         </div>

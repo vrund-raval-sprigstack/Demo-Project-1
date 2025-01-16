@@ -8,7 +8,8 @@ export default function RecentContactCard({ imageUrl, name, company }) {
     const randomBgColor = React.useMemo(() => getRandomColor(), []);
 
     function getRandomColor() {
-        const colors = ['#8B0000', '#006400', '#00008B', '#4B0082', '#8B4513'];
+        const colors = ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF'];
+
 
         return colors[Math.floor(Math.random() * colors.length)];
     }
@@ -18,7 +19,7 @@ export default function RecentContactCard({ imageUrl, name, company }) {
 
     return (
         <>
-            <div className="d-flex align-items-center px-4 py-3 border border-secendory rounded hover-effect m-2">
+            <div className="d-flex align-items-center px-4 py-2 border tw-border-gray-200 tw-rounded-lg hover-effect m-2">
                 <div
                     className="me-4 d-flex justify-content-center align-items-center"
 
@@ -47,7 +48,7 @@ export default function RecentContactCard({ imageUrl, name, company }) {
                         // style={{ width: '50px', height: '50px' }}
                         />
                     ) : (
-                        <span style={{ color: 'white', fontSize: '20px' }}>{name[0]}</span>
+                        <span style={{ color: 'gray', fontSize: '20px' }}>{name[0]}</span>
                     )}
                 </div>
                 {/* <div
@@ -66,8 +67,8 @@ export default function RecentContactCard({ imageUrl, name, company }) {
                     />
                 </div> */}
                 <div>
-                    <p className="mb-1 name-text">{name}</p>
-                    <p className="mb-0 text-muted company-text">{company}</p>
+                    <p className="mb-1 text-muted name-text tw-text-sm">{name}</p>
+                    <p className="mb-0 text-muted company-text tw-text-sm">{company}</p>
                 </div>
             </div>
         </>
