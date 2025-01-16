@@ -1,0 +1,57 @@
+.login-card {
+    color: rgba(27, 52, 104, 1);
+}
+
+.login-button {
+    color: white;
+    background: rgba(27, 52, 104, 1);
+}
+
+.login-button:hover {
+    color: white;
+    background: rgb(44, 81, 160);
+}
+
+.login-button:focus {
+    color: white;
+    background: rgb(44, 81, 160);
+}
+
+.login-button:active {
+    color: white !important;
+    background-color: rgb(44, 81, 160) !important;
+}
+
+.forgot-link-text {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.my-label {
+    font-weight: 500;
+}
+
+.remember-me-switch:checked {
+    background-color: #1e3a8a;
+    border-color: #1e3a8a;
+}
+
+.remember-me-switch:not(:checked) {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+/* Optional: Hover states for better UX */
+.remember-me-switch:checked:hover {
+    background-color: #1e3a8a;
+    border-color: #1e3a8a;
+}
+
+.remember-me-switch:not(:checked):hover {
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+.login-logo {
+    width: 38%;
+}

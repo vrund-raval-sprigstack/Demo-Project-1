@@ -24,3 +24,141 @@
     font-weight: 500;
     /* Make company name bold on hover */
 }
+
+
+
+
+/* ScheduledEmailCard.css */
+.email-card {
+    display: flex;
+    background-color: #F3F5F9;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 120px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.date-column {
+    width: 100px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(212, 212, 212);
+}
+
+.day-text {
+    color: #3279cc7d;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+.date-number {
+    color: #464646;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.content-section {
+    flex: 1;
+    padding: 20px 24px;
+}
+
+.scheduled-by {
+    margin-bottom: 8px;
+}
+
+.scheduled-label {
+    color: #6B7280;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.scheduler-name {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.email-subject {
+    color: #111827;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timestamp {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.actions-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.recipients-badge {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 6px;
+    gap: 4px;
+}
+
+.send-to {
+    color: #2563EB;
+    font-size: 14px;
+}
+
+.recipient-count {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recipients-badge i {
+    color: #2563EB;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.unsend-btn {
+    background-color: #D1D5DB;
+    /* Darker gray color */
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.unsend-btn:hover {
+    background-color: #9CA3AF;
+    /* Even darker on hover */
+}
+
+/* Add hover effect to the whole card */
+.email-card {
+    transition: transform 0.2s ease;
+}
+
+.email-card:hover {
+    transform: translateY(-1px);
+}

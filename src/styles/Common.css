@@ -17,3 +17,20 @@ body {
 .container-fluid {
     margin-top: 130px;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.placeholder-light::placeholder {
+    opacity: 0.5;
+}
+
+.primary-color-text {
+    color: rgba(27, 52, 104, 1);
+
+}
+
+.primary-color-bg {
+    background-color: rgba(27, 52, 104, 1);
+}
